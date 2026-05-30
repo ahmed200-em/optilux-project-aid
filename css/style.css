@@ -60,20 +60,53 @@ body {
 }
 
 .btn {
-  background-color: var(--primary-teal);
-  color: white;
   padding: 12px 28px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
   font-size: 15px;
-  transition: background-color 0.2s ease;
   border: none;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  background-color: var(--primary-teal);
+  color: transparent; 
 }
-
-.btn:hover {
+.btn::before {
+  content: "Book Your Visit";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transform: translateY(0); 
+  transition: transform 0.5s ease;
+}
+.btn::after {
+  content: "Book Your Visit";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
   background-color: #009999;
+  transform: translateY(-100%); 
+  transition: transform 0.5s ease;
+}
+.btn:hover::before {
+  transform: translateY(100%);
+}
+.btn:hover::after {
+  transform: translateY(0);
 }
 
 /*todo Hero Section Styles */
@@ -81,7 +114,7 @@ body {
   background: #89e0df;
   background: linear-gradient(
     180deg,
-    rgba(137, 224, 223, 1) 0%,
+    rgb(147, 221, 220) 0%,
     rgba(174, 230, 230, 1) 46%,
     rgba(229, 247, 245, 1) 100%
   );
@@ -113,7 +146,7 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 54px;
+  font-size: 53px;
   color: var(--dark-text);
   line-height: 1.15;
   margin-bottom: 24px;
@@ -127,7 +160,55 @@ body {
   font-size: 17px;
   max-width: 90%;
 }
-
+.btn2 {
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  background-color: var(--primary-teal);
+  color: transparent; 
+}
+.btn2::before {
+  content: "Book Appointment";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transform: translateY(0); 
+  transition: transform 0.5s ease;
+}
+.btn2::after {
+  content: "Book Appointment";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #009999;
+  transform: translateY(-100%); 
+  transition: transform 0.5s ease;
+}
+.btn2:hover::before {
+  transform: translateY(100%);
+}
+.btn2:hover::after {
+  transform: translateY(0);
+}
 /* Reviews Section */
 .reviews-wrapper {
   margin-top: 30px;
@@ -201,11 +282,11 @@ body {
   width: 170px;
   height: 180px;
 }
-.expertise-section {
+.expertise-div {
   width: 100%;
 }
 
-.expertise-section h2 {
+.expertise-div h2 {
   color: var(--dark-text);
   font-size: 28px;
   margin-bottom: 35px;
