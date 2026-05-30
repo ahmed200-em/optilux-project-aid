@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/*? Variables */
+:root {
+  --primary-teal: #00b8b8;
+  --dark-text: #2d4a52;
+  --light-text: #6b7280;
+  --bg-gradient-start: #b5ece6;
+  --bg-gradient-end: #d9f4f1;
+}
+
+body {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/*! Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto 20px auto;
+  padding: 15px 0 0 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #000;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-teal);
+}
+
+.btn {
+  background-color: var(--primary-teal);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #009999;
+}
+
+/*todo Hero Section Styles */
+.hero-container {
+  background: #89e0df;
+  background: linear-gradient(
+    180deg,
+    rgba(137, 224, 223, 1) 0%,
+    rgba(174, 230, 230, 1) 46%,
+    rgba(229, 247, 245, 1) 100%
+  );
+  border-radius: 15px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px; 
+  padding: 40px 40px;
+}
+
+.hero-top-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.hero-content {
+  padding-right: 20px;
+  flex: 1;
+}
+
+.subtitle {
+  color: var(--primary-teal);
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.hero-content h1 {
+  font-size: 54px;
+  color: var(--dark-text);
+  line-height: 1.15;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.description {
+  color: var(--light-text);
+  line-height: 1.7;
+  margin-bottom: 35px;
+  font-size: 17px;
+  max-width: 90%;
+}
+
+/* Reviews Section */
+.reviews-wrapper {
+  margin-top: 30px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
+  color: var(--dark-text);
+}
+
+.reviews-wrapper span {
+  font-weight: 600;
+}
+
+.rating-number {
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+  color: #ffc107;
+}
+
+.review-count {
+  color: var(--light-text);
+  margin-left: 10px;
+}
+.hero-images {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex: 1;
+}
+
+.img-col {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 15px;
+}
+
+.col-right {
+  margin-top: 30px;
+  display: flex;
+  align-items: start;
+}
+
+.img-col img {
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.img-1 {
+  width: 200px;
+  height: 170px;
+}
+.img-2 {
+  width: 230px;
+  height: 240px;
+}
+.img-3 {
+  height: 250px;
+  width: 260px;
+}
+.img-4 {
+  width: 170px;
+  height: 180px;
+}
+.expertise-section {
+  width: 100%;
+}
+
+.expertise-section h2 {
+  color: var(--dark-text);
+  font-size: 28px;
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 60px;
+}
+
+.expertise-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.expertise-title {
+  color: var(--dark-text);
+}
+
+.expertise-percent {
+  color: var(--light-text);
+}
+
+.progress-bar-track {
+  background-color: rgba(0, 0, 0, 0.08);
+  height: 6px;
+  border-radius: 4px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background-color: var(--primary-teal);
+  height: 100%;
+  width: 0%;
+  border-radius: 4px;
+  transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
