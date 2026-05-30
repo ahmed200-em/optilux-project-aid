@@ -25,26 +25,11 @@
             <span class="logo-text">Optilux</span>
         </div>
         <nav class="nav-links">
-            <a href="#">Home <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2">
-                    <path d="M6 9l6 6 6-6" />
-                </svg></a>
-            <a href="#">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2">
-                    <path d="M6 9l6 6 6-6" />
-                </svg></a>
-            <a href="#">About Us <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2">
-                    <path d="M6 9l6 6 6-6" />
-                </svg></a>
-            <a href="#">Pages <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2">
-                    <path d="M6 9l6 6 6-6" />
-                </svg></a>
-            <a href="#">Shop <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2">
-                    <path d="M6 9l6 6 6-6" />
-                </svg></a>
+            <a href="#">Home <i class="fa-solid fa-angle-down"></i></a>
+            <a href="#">Services <i class="fa-solid fa-angle-down"></i></a>
+            <a href="#">About Us <i class="fa-solid fa-angle-down"></i></a>
+            <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+            <a href="#">Shop <i class="fa-solid fa-angle-down"></i></a>
             <a href="#">Blog</a>
             <a href="#">Contact</a>
         </nav>
@@ -314,6 +299,86 @@
             </div>
             <div class="about-image-wrapper">
                 <img src="images/women-shop.webp" alt="Professional Optometrist in clinic">
+            </div>
+        </section>
+        <!-- todo this is the appointment section  -->
+        <section class="appointment-section">
+            <div class="appointment-container">
+                <div class="appointment-info">
+                    <h2>Make an appointment</h2>
+                    <p>Complete the form and we will send you a confirmation within 24 hours.</p>
+                    <a href="tel:1-2554-2356-33" class="phone-link">Or Call Us 1-2554-2356-33</a>
+                    <h3>Opening Hours</h3>
+                    <ul class="hours-list">
+                        <li class="day-container-li">
+                            <div class="day-container">
+                                <i class="fa-solid fa-clock"></i>
+                                Monday - Thursday
+                            </div>
+                            <span class="time">08:00 - 20:00</span>
+                        </li>
+                        <li class="day-container-li">
+                            <div class="day-container">
+                                <i class="fa-solid fa-clock"></i>
+                                Friday
+                            </div>
+                            <span class="time">09:00 - 19:00</span>
+                        </li>
+                        <li class="day-container-li">
+                            <div class="day-container">
+                                <i class="fa-solid fa-clock"></i>
+                                Saturday
+                            </div>
+                            <span class="time">09:00 - 18:00</span>
+                        </li>
+                        <li class="last-day-container">
+                            <div class="day-container">
+                                <i class="fa-solid fa-clock"></i>
+                                Sunday
+                            </div>
+                            <span class="time">09:00 - 18:00</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="appointment-form-wrapper">
+                    <form>
+                        <div class="form-row">
+                            <div class="select-wrapper w-100">
+                                <select>
+                                    <option>Select Service</option>
+                                    <option>Comprehensive Eye Exam</option>
+                                    <option>Pediatric Eye Care</option>
+                                    <option>Glasses Fitting</option>
+                                </select>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-icon-wrapper">
+                                <input type="text" placeholder="mm/dd/0900">
+                                <i class="fa-regular fa-calendar"></i>
+                            </div>
+                            <div class="select-wrapper flex-1">
+                                <select>
+                                    <option>Select Time</option>
+                                    <option>09:00 AM</option>
+                                    <option>10:00 AM</option>
+                                    <option>11:00 AM</option>
+                                </select>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <input type="text" class="flex-1" placeholder="Name" required>
+                            <input type="email" class="flex-1" placeholder="Email" required>
+                            <input type="tel" class="flex-1" placeholder="Phone" required>
+                        </div>
+                        <div class="form-row">
+                            <textarea class="w-100" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Appointment</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>

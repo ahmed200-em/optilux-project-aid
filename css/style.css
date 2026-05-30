@@ -346,7 +346,7 @@ body {
   text-transform: capitalize;
 }
 
-.services-title{
+.services-title {
   color: #2b4356;
   font-size: 38px;
   font-weight: 700;
@@ -521,24 +521,24 @@ body {
 /* todo about section styling  */
 .about-section {
   display: flex;
-  min-height: 600px; 
-  background-color: #daf5f3; 
+  min-height: 600px;
+  background-color: #daf5f3;
 }
 .about-content {
-  flex: 1; 
+  flex: 1;
   padding: 80px 60px 80px 10vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .about-subtitle {
-  color: #0cb8b6; 
+  color: #0cb8b6;
   font-size: 15px;
   font-weight: 700;
   margin-bottom: 16px;
 }
 .about-title {
-  color: #2b4356; 
+  color: #2b4356;
   font-size: 40px;
   font-weight: 600;
   line-height: 1.25;
@@ -552,11 +552,11 @@ body {
   margin-bottom: 40px;
   max-width: 550px;
 }
-.signature img{
+.signature img {
   width: 40%;
 }
 .about-image-wrapper {
-  flex: 1.4; 
+  flex: 1.4;
   position: relative;
 }
 .about-image-wrapper img {
@@ -564,4 +564,177 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+/* todo appointment Section Styling */
+.appointment-section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+.appointment-container {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
+  align-items: flex-start;
+}
+.appointment-info {
+  flex: 0 0 40%;
+}
+.appointment-info h2 {
+  color: #2b4356;
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+.appointment-info p {
+  color: #7a8288;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.phone-link {
+  color: #7a8288;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 35px;
+}
+.phone-link:hover{
+  color: #0cb8b6;
+  transition: color 0.3s ease;
+}
+.appointment-info h3 {
+  color: #2b4356;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.hours-list {
+  list-style: none;
+  width: 100%;
+}
+.day-container-li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 15px;
+}
+.last-day-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  font-size: 15px;
+}
+.day-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #7a8288;
+}
+.day-container .fa-clock {
+  color: #0cb8b6;
+  width: 16px;
+  height: 16px;
+}
+.time {
+  color: #0cb8b6;
+  font-weight: 500;
+}
+.appointment-form-wrapper {
+  flex: 1;
+  padding-top: 10px;
+}
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #f0f0f0;
+  background-color: #fafbfc;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #555;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0cb8b6;
+}
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.select-wrapper {
+  position: relative;
+  flex: 1;
+}
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+.select-wrapper .fa-angle-down {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  color: #0cb8b6;
+}
+
+.input-icon-wrapper {
+  position: relative;
+  flex: 1;
+}
+.input-icon-wrapper input {
+  padding-right: 40px;
+}
+.input-icon-wrapper .fa-calendar {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: #2b4356;
+}
+.w-100 {
+  width: 100%;
+}
+.flex-1 {
+  flex: 1;
+}
+.submit-btn {
+  background-color: #0cb8b6;
+  color: #ffffff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  display: inline-block;
+  margin-top: 5px;
+}
+.submit-btn:hover {
+  background-color: #0a9b9a;
+  transform: translateY(-2px);
 }
