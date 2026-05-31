@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-
 /*? Variables */
 :root {
   --primary-teal: #00b8b8;
@@ -13,7 +12,6 @@
   --bg-gradient-start: #b5ece6;
   --bg-gradient-end: #d9f4f1;
 }
-
 body {
   width: 100%;
   background-color: #ffffff;
@@ -21,7 +19,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
 /*! Header Styles */
 .the-header {
   display: flex;
@@ -47,13 +44,11 @@ html {
   font-weight: 800;
   color: #000;
 }
-
 .nav-links {
   display: flex;
   gap: 28px;
   align-items: center;
 }
-
 .nav-links a {
   text-decoration: none;
   color: #111;
@@ -64,11 +59,9 @@ html {
   gap: 6px;
   transition: color 0.2s ease;
 }
-
 .nav-links a:hover {
   color: var(--primary-teal);
 }
-
 .btn {
   padding: 12px 28px;
   border-radius: 30px;
@@ -118,7 +111,6 @@ html {
 .btn:hover::after {
   transform: translateY(0);
 }
-
 /*todo Hero Section Styles */
 .hero-container {
   background: #89e0df;
@@ -136,25 +128,21 @@ html {
   gap: 60px;
   padding: 40px 40px;
 }
-
 .hero-top-row {
   display: flex;
   width: 100%;
   align-items: center;
 }
-
 .hero-content {
   padding-right: 20px;
   flex: 1;
 }
-
 .subtitle {
   color: var(--primary-teal);
   font-weight: 700;
   margin-bottom: 16px;
   font-size: 16px;
 }
-
 .hero-content h1 {
   font-size: 53px;
   color: var(--dark-text);
@@ -162,7 +150,6 @@ html {
   margin-bottom: 24px;
   font-weight: 700;
 }
-
 .description {
   color: var(--light-text);
   line-height: 1.7;
@@ -229,22 +216,18 @@ html {
   font-size: 15px;
   color: var(--dark-text);
 }
-
 .reviews-wrapper span {
   font-weight: 600;
 }
-
 .rating-number {
   font-weight: 700;
   margin-left: 5px;
 }
-
 .stars {
   display: flex;
   gap: 4px;
   color: #ffc107;
 }
-
 .review-count {
   color: var(--light-text);
   margin-left: 10px;
@@ -255,26 +238,22 @@ html {
   justify-content: center;
   flex: 1;
 }
-
 .img-col {
   display: flex;
   flex-direction: column;
   align-items: end;
   gap: 15px;
 }
-
 .col-right {
   margin-top: 30px;
   display: flex;
   align-items: start;
 }
-
 .img-col img {
   border-radius: 15px;
   object-fit: cover;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
-
 .img-1 {
   width: 200px;
   height: 170px;
@@ -294,20 +273,17 @@ html {
 .expertise-div {
   width: 100%;
 }
-
 .expertise-div h2 {
   color: var(--dark-text);
   font-size: 28px;
   margin-bottom: 35px;
   font-weight: 700;
 }
-
 .expertise-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px 60px;
 }
-
 .expertise-header {
   display: flex;
   justify-content: space-between;
@@ -315,15 +291,12 @@ html {
   font-size: 16px;
   font-weight: 600;
 }
-
 .expertise-title {
   color: var(--dark-text);
 }
-
 .expertise-percent {
   color: var(--light-text);
 }
-
 .progress-bar-track {
   background-color: rgba(0, 0, 0, 0.08);
   height: 6px;
@@ -331,7 +304,6 @@ html {
   width: 100%;
   overflow: hidden;
 }
-
 .progress-bar-fill {
   background-color: var(--primary-teal);
   height: 100%;
@@ -346,7 +318,6 @@ html {
   width: 90%;
   margin: 0 auto;
 }
-
 .services-subtitle {
   color: #0cb8b6;
   font-size: 16px;
@@ -354,7 +325,6 @@ html {
   margin-bottom: 12px;
   text-transform: capitalize;
 }
-
 .services-title {
   color: #2b4356;
   font-size: 38px;
