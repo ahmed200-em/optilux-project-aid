@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+/*? Variables */
+:root {
+  --primary-teal: #00b8b8;
+  --dark-text: #2d4a52;
+  --light-text: #6b7280;
+  --bg-gradient-start: #b5ece6;
+  --bg-gradient-end: #d9f4f1;
+  --dark-blue: #2d4c5a;
+  --teal-primary: #00bfa5;
+  --light-teal-bg: #eaf6f6;
+  --text-gray: #7d8e98;
+}
+body {
+  width: 100%;
+  background-color: var(--light-teal-bg);
+}
+html {
+  scroll-behavior: smooth;
+}
+/*! Header Styles */
+.the-header {
+  width: 100%;
+  background-color: white;
+  transition: all 0.9s ease;
+  transform-origin: center;
+}
+
+.the-header.scroll-up {
+  transform: translateY(20px) scaleX(0.9);
+  border-radius: 40px;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto 20px auto;
+  padding: 15px 0 15px 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo svg {
+  color: var(--primary-teal);
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+}
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #000;
+}
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+.nav-links a:hover {
+  color: var(--primary-teal);
+}
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  background-color: var(--primary-teal);
+  color: transparent;
+}
+.btn::before {
+  content: "Book Your Visit";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transform: translateY(0);
+  transition: transform 0.5s ease;
+}
+.btn::after {
+  content: "Book Your Visit";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #009999;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+}
+.btn:hover::before {
+  transform: translateY(100%);
+}
+.btn:hover::after {
+  transform: translateY(0);
+}
+/* ! this is the main  */
+.site-main {
+  width: 100%;
+  /* margin: 20px auto; */
+}
+.vision-correction-section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.section-header {
+  background-color: transparent;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 12px;
+}
+.section-header h1 {
+  color: var(--dark-blue);
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.section-header .breadcrumbs {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.section-header .breadcrumbs:hover {
+  color: var(--text-gray);
+  font-weight: 600;
+}
+.section-header .breadcrumbs span {
+  color: var(--text-gray);
+  font-weight: 600;
+}
+.content-layout {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 50px;
+  width: 90%;
+}
+.main-content{
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+.sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sidebar a {
+  display: block;
+  padding: 16px 20px;
+  background-color: var(--light-teal-bg);
+  color: var(--dark-blue);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.02rem;
+  transition: background-color 0.2s ease;
+}
+.sidebar a.active {
+  background-color: var(--teal-primary);
+  color: #ffffff;
+}
+.core-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.intro-block {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+}
+.intro-text-area {
+  flex: 1;
+}
+.intro-text-area h2 {
+  color: var(--dark-blue);
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.intro-text-area p {
+  color: var(--text-gray);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+.intro-image-area {
+  flex: 1;
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  min-height: 320px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  /* Placeholder for doctor image */
+  background-image: url("../images/services-picture.webp");
+  background-size: cover;
+  background-position: center;
+}
+.teal-overlay-box {
+  position: absolute;
+  bottom: 3rem;
+  background-color: var(--teal-primary);
+  color: #ffffff;
+  padding: 24px 30px;
+  border-radius: 12px;
+  width: 90%;
+  margin-bottom: -20px;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-weight: 500;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+.benefits-block h3.benefits-title {
+  color: var(--dark-blue);
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 50px;
+}
+.benefit-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background-color: var(--teal-primary);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.icon-box .fa-check {
+  width: 28px;
+  height: 28px;
+  color: #ffffff;
+}
+.benefit-text h4 {
+  color: var(--dark-blue);
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.benefit-text p {
+  color: var(--text-gray);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+/* ! the footer style */
+.the-footer {
+  margin: 0 auto;
+  background: #005c67;
+  color: #fff;
+  position: relative;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1fr 1.5fr;
+  gap: 60px;
+  padding: 70px 50px;
+  width: 90%;
+}
+.logo h2 {
+  font-size: 30px;
+  /* margin-bottom: 20px; */
+}
+.brand p {
+  line-height: 1.8;
+  color: #d8e7ea;
+  max-width: 500px;
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+.socials {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+.socials a {
+  color: #d8e7ea;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 5px;
+  transition: all 0.6s ease;
+}
+.socials a:hover {
+  color: #12c7cf;
+  background-color: white;
+  border-radius: 50%;
+  transition: all 0.6s ease;
+}
+.the-footer h3 {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+.the-footer ul {
+  list-style: none;
+}
+.the-footer ul li {
+  margin-bottom: 18px;
+}
+.the-footer ul li a {
+  color: #d8e7ea;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 15px;
+}
+.the-footer ul li a:hover {
+  color: #fff;
+}
+.contact-item {
+  margin-bottom: 30px;
+}
+.contact-item .fa-phone,
+.fa-location-dot,
+.fa-envelope {
+  color: #12c7cf;
+  margin-right: 10px;
+}
+.contact-item strong {
+  display: block;
+  margin-bottom: 8px;
+}
+.contact-item p {
+  color: #d8e7ea;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  width: 100%;
+}
+.Copyright-foot {
+  width: 90%;
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Copyright-foot p {
+  font-size: 14.5px;
+}
+.footer-links {
+  display: flex;
+  gap: 40px;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14.5px;
+}
+.fa-angle-up {
+  color: white;
+  background: var(--primary-teal);
+  padding: 8px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1rem;
+  right: 0.5rem;
+  position: fixed;
+}
