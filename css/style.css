@@ -28,7 +28,6 @@ body {
   margin: 0 auto 20px auto;
   padding: 15px 0 0 0;
 }
-
 .logo {
   display: flex;
   align-items: center;
@@ -611,7 +610,7 @@ body {
   list-style: none;
   width: 100%;
 }
-.day-container-li {
+.hours-list li {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -619,12 +618,8 @@ body {
   border-bottom: 1px solid #f0f0f0;
   font-size: 15px;
 }
-.last-day-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 0;
-  font-size: 15px;
+.hours-list li:last-child{
+  border-bottom: none;
 }
 .day-container {
   display: flex;
@@ -887,4 +882,110 @@ textarea {
 }
 .dot.active {
   background-color: #0cb8b6;
+}
+/* todo faq Section styling */
+.faq-section {
+  padding: 100px 0px;
+  display: flex;
+  justify-content: center;
+}
+.faq-container {
+  display: flex;
+  gap: 20px;
+  width: 90%;
+  align-items: flex-start;
+}
+.faq-header {
+  flex: 1.1;
+}
+.faq-subtitle {
+  display: block;
+  color: #0cb8b6;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+.faq-title {
+  color: #2b4356;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+.faq-content {
+  flex: 1;
+}
+.faq-tabs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.tab-btn {
+  background: transparent;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #7a8288;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.tab-btn.active {
+  background-color: #0cb8b6;
+  color: #ffffff;
+}
+.tab-btn:hover:not(.active) {
+  color: #2b4356;
+  background-color: #f5f7f9;
+}
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+}
+.faq-item {
+  border-bottom: 1px solid #eceff1;
+}
+.faq-item:last-child {
+  border-bottom: none;
+}
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  color: #2b4356;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+  transition: color 0.3s ease;
+}
+.faq-question:hover {
+  color: #0cb8b6;
+}
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+.chevron-icon {
+  width: 18px;
+  height: 18px;
+  stroke: #0cb8b6;
+  stroke-width: 2.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.3s ease;
+}
+.faq-item[open] .chevron-icon {
+  transform: rotate(180deg);
+}
+.faq-answer {
+  padding-bottom: 24px;
+  color: #7a8288;
+  font-size: 15px;
+  line-height: 1.7;
 }
