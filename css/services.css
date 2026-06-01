@@ -151,17 +151,19 @@ html {
   font-weight: 600;
   letter-spacing: -0.5px;
 }
-.section-header .breadcrumbs {
-  color: var(--text-gray);
-  font-size: 0.95rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.breadcrumb {
+  font-size: 14px;
 }
-.section-header .breadcrumbs:hover {
-  color: var(--text-gray);
-  font-weight: 600;
+.breadcrumb .divider {
+  margin: 0 10px;
+  color: #aaa;
 }
-.section-header .breadcrumbs span {
+.breadcrumb a{
+    text-decoration: none;
+    color: #aaa;
+    transition: all 0.4s ease;
+}
+.breadcrumb a:hover {
   color: var(--text-gray);
   font-weight: 600;
 }
