@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+:root {
+  --primary-teal: #00b8b8;
+  --dark-text: #2d4a52;
+  --light-text: #6b7280;
+  --bg-gradient-start: #b5ece6;
+  --bg-gradient-end: #d9f4f1;
+  --dark-blue: #2d4c5a;
+  --teal-primary: #00bfa5;
+  --light-teal-bg: #eaf6f6;
+  --text-gray: #7d8e98;
+  --primary: var(--primary-teal);
+  --primary-dark: #009999;
+  --white: #ffffff;
+  --bg-light: #f8fafc;
+  --text-main: var(--dark-text);
+}
+body {
+  width: 100%;
+  background-color: var(--light-teal-bg);
+  color: var(--light-text);
+  line-height: 1.6;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.text-center {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}
+/* !this is the header  */
+.the-header {
+  width: 100%;
+  background-color: white;
+  transition: all 0.9s ease;
+  transform-origin: center;
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+}
+.the-header.scroll-up {
+  transform: translateY(20px) scaleX(0.9);
+  border-radius: 40px;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo svg {
+  color: var(--primary-teal);
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+}
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #000;
+}
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+.nav-links a:hover {
+  color: var(--primary-teal);
+}
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  background-color: var(--primary-teal);
+  color: transparent;
+}
+.btn::before {
+  content: "Book Your Visit";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transform: translateY(0);
+  transition: transform 0.5s ease;
+}
+.btn::after {
+  content: "Book Your Visit";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--primary-dark);
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+}
+.btn:hover::before {
+  transform: translateY(100%);
+}
+.btn:hover::after {
+  transform: translateY(0);
+}
