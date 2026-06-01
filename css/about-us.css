@@ -526,3 +526,69 @@ img {
   right: 0.5rem;
   position: fixed;
 }
+/* ! tablet responsiviter  */
+@media (max-width: 992px) {
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 20px;
+  }
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .about-images {
+    width: 100%;
+    min-height: 350px;
+  }
+  .img-front {
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+  }
+  .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .doctors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .statistics-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+/* ! phone responsiviter  */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .expertise-grid,
+  .doctors-grid,
+  .statistics-content,
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .Copyright-foot {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .doctor-card:hover img,
+  .doctor-card:hover h4,
+  .doctor-card:hover p,
+  .doctor-card:hover .socials {
+    transform: none;
+  }
+}
