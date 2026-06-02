@@ -146,3 +146,114 @@ img {
 .btn:hover::after {
   transform: translateY(0);
 }
+/* ! this is the main  */
+.site-main{
+  width: 100%;
+}
+/* todo main header  */
+.header-section{
+  display: flex;
+  flex-direction:colume;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 60px;
+  text-align: center;
+}
+.section-header h1{
+  font-size: 56px;
+  color: var(--dark-blue);
+}
+.breadcrumb a{
+  font-size: 13px;
+  color: var(--light-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.breadcrumb a:hover{
+  color: #777;
+  font-weight: 700;
+}
+.breadcrumb span{
+  color: #777777;
+}
+/* todo the contact section */
+.contact-section{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+}
+.contact-container{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+.cities-info{
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.city{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.city h4{
+  font-size: 20px;
+  color: var(--dark-blue);
+}
+.city span{
+  color: var(--light-text);
+  font-weight: 200;
+}
+.formuler{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 15px;
+}
+.formuler input, textarea{
+  padding: 15px 10px;
+  background-color: #00000006;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.formuler input:focus{
+  border: 1px solid #009999;
+  background-color: white;
+}
+.formuler textarea:focus{
+  border: 1px solid #009999;
+  background-color: white;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+
+.formuler input::placeholder{
+  color: var(--dark-text);
+  font-size: 13px;
+}
+.formuler textarea{
+  height: 8rem;
+}
+.formuler button{
+  background-color: var(--primary-teal);
+  color: white;
+  padding: 10px;
+  border-radius: 15pc;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+.formuler button:hover{
+  background-color: var(--primary-dark);
+  box-shadow: 0 10px 15px 1px black;
+}
+

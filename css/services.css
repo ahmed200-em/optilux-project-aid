@@ -197,11 +197,15 @@ html {
   border-radius: 8px;
   font-weight: 600;
   font-size: 1.02rem;
-  transition: background-color 0.2s ease;
+  transition: all 0.2s ease;
 }
 .sidebar a.active {
   background-color: var(--teal-primary);
   color: #ffffff;
+}
+.sidebar a:hover{
+  background-color: var(--teal-primary);
+  color: white;
 }
 .core-content {
   flex: 1;
