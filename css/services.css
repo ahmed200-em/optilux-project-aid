@@ -23,7 +23,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
-::selection{
+::selection {
   background-color: var(--primary-teal);
   color: white;
 }
@@ -64,6 +64,38 @@ html {
   font-size: 1.8rem;
   font-weight: 800;
   color: #000;
+}
+.dropdown-container {
+  position: relative;
+  padding: 10px 0;
+  list-style: none;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 175%;
+  left: 0;
+  min-width: 180px;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  list-style: none;
+  z-index: 200;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  padding: 15px 10px;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dropdown-container:hover .dropdown-menu {
+  visibility: visible;
+  transform: translateY(0);
+}
+.dropdown-menu li {
+  width: 100%;
 }
 .nav-links {
   display: flex;
@@ -157,14 +189,14 @@ html {
 .breadcrumb {
   font-size: 14px;
 }
-.breadcrumb  {
+.breadcrumb {
   margin: 0 10px;
   color: #aaa;
 }
-.breadcrumb a{
-    text-decoration: none;
-    color: #aaa;
-    transition: all 0.4s ease;
+.breadcrumb a {
+  text-decoration: none;
+  color: #aaa;
+  transition: all 0.4s ease;
 }
 .breadcrumb a:hover {
   color: var(--text-gray);
@@ -177,12 +209,12 @@ html {
   gap: 50px;
   width: 90%;
 }
-.main-content{
-    width: 100%;
-    background: white;
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
+.main-content {
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
 }
 .sidebar {
   width: 200px;
@@ -206,7 +238,7 @@ html {
   background-color: var(--teal-primary);
   color: #ffffff;
 }
-.sidebar a:hover{
+.sidebar a:hover {
   background-color: var(--teal-primary);
   color: white;
 }
