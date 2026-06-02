@@ -369,3 +369,65 @@ input[type="number"]::-webkit-inner-spin-button {
   right: 0.5rem;
   position: fixed;
 }
+/* !phone responsivoter  */
+@media (max-width: 768px) {
+  .header-content,
+  .contact-container{
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav-links{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section-header h1{
+    font-size: 40px;
+  }
+  .breadcrumb{
+    font-size: 10px;
+  }
+  .cities-info{
+    grid-template-columns: 1fr;
+  }
+  .city{
+    text-align: center;
+  }
+  .footer-top{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .footer-bottom{
+    width: 100%;
+  }
+}
+/* !tablet responsivoter  */
+@media (max-width: 768px) {
+  .header-content,
+  .contact-container{
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav-links{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section-header h1{
+    font-size: 45px;
+  }
+  .breadcrumb{
+    font-size: 10px;
+  }
+  .cities-info{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .city{
+    text-align: center;
+  }
+  .footer-top{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .footer-bottom{
+    width: 100%;
+  }
+}
