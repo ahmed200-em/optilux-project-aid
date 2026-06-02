@@ -19,6 +19,10 @@ body {
 html {
   scroll-behavior: smooth;
 }
+::selection{
+  background-color: var(--primary-teal);
+  color: white;
+}
 /*! Header Styles */
 .the-header {
   display: flex;
