@@ -474,13 +474,13 @@ img {
   color: #d8e7ea;
   font-size: 20px;
   text-decoration: none;
-  padding: 5px;
+  padding: 3px 5px;
   transition: all 0.6s ease;
+  border-radius: 10px;
 }
 .socials2 a:hover {
   color: #12c7cf;
   background-color: white;
-  border-radius: 50%;
   transition: all 0.6s ease;
 }
 .the-footer h3 {
@@ -500,7 +500,10 @@ img {
   font-size: 15px;
 }
 .the-footer ul li a:hover {
-  color: #fff;
+  color: var(--teal-primary);
+}
+.footer-links a:hover {
+  color: var(--light-teal-bg);
 }
 .contact-item {
   margin-bottom: 30px;
