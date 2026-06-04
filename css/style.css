@@ -1462,12 +1462,12 @@ textarea {
     border: none;
     display: none;
   }
-
-  .dropdown-container:hover .dropdown-menu {
-    display: flex;
+  .btn {
+    width: 38%;
+    padding: 10px 0;
   }
-  .hero-images{
-  margin-top: 30px;
+  .hero-images {
+    margin-top: 30px;
   }
   .img-1,
   .img-4 {
@@ -1575,7 +1575,7 @@ textarea {
     width: 90px;
     height: 100px;
   }
-  .steps-container{
+  .steps-container {
     grid-template-columns: 250px;
     width: 100%;
   }

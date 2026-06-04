@@ -3,17 +3,17 @@
   margin: 0;
   padding: 0;
 }
-.review-card{
+.review-card {
   width: 100%;
   background-color: white;
   display: flex;
   justify-content: center;
   padding: 40px 0;
 }
-.cards{
+.cards {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 .card {
@@ -75,11 +75,54 @@
   line-height: 1.65;
   font-weight: 400;
 }
+.menu-toggle-cb {
+  appearance: none;
+}
 /* ! tablet responsiviter  */
 @media (max-width: 992px) {
   .content-layout {
     flex-direction: column;
     align-items: center;
+  }
+  .burger-menu {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 250;
+  }
+  .burger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--dark-text);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 240;
+  }
+
+  .menu-toggle-cb:checked ~ .nav-links {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
   .sidebar {
     width: 100%;
@@ -104,7 +147,6 @@
 /* ! Mobile responsiviter */
 @media (max-width: 768px) {
   .header-content {
-    flex-direction: column;
     gap: 20px;
     padding: 20px 0;
   }
@@ -115,6 +157,13 @@
   }
   .section-header h1 {
     font-size: 1.2rem;
+  }
+  .btn{
+    width: 38%;
+    padding: 10px 0;
+  }
+  .cards{
+    grid-template-columns: 1fr;
   }
   .intro-text-area h2 {
     font-size: 2rem;
