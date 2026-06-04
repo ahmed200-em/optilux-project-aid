@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/754a3808be.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- ! this is the header -->
     <header class="the-header">
@@ -20,6 +22,12 @@
             </svg>
             <span class="logo-text">Optilux</span>
         </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-cb">
+        <label for="menu-toggle" class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <nav class="nav-links">
             <a href="index.html" style="color: var(--primary-teal);">Home <i class="fa-solid fa-angle-down"></i></a>
             <a href="services.html">Services <i class="fa-solid fa-angle-down"></i></a>
@@ -31,7 +39,13 @@
                     <li><a href="testimonials.html">Testimonials</a></li>
                 </ul>
             </li>
-            <a href="">Shop <i class="fa-solid fa-angle-down"></i></a>
+            <li class="dropdown-container">
+                <a href="shop.html">Shop <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="shop2.html">Shop2</a></li>
+                </ul>
+            </li>
             <a href="">Blog</a>
             <a href="contact.html">Contact</a>
         </nav>
@@ -298,29 +312,25 @@
                     <ul class="hours-list">
                         <li>
                             <div class="day-container">
-                                <i class="fa-solid fa-clock"></i>
-                                Monday - Thursday
+                                <i class="fa-solid fa-clock"></i> Monday - Thursday
                             </div>
                             <span class="time">08:00 - 20:00</span>
                         </li>
                         <li>
                             <div class="day-container">
-                                <i class="fa-solid fa-clock"></i>
-                                Friday
+                                <i class="fa-solid fa-clock"></i> Friday
                             </div>
                             <span class="time">09:00 - 19:00</span>
                         </li>
                         <li>
                             <div class="day-container">
-                                <i class="fa-solid fa-clock"></i>
-                                Saturday
+                                <i class="fa-solid fa-clock"></i> Saturday
                             </div>
                             <span class="time">09:00 - 18:00</span>
                         </li>
                         <li>
                             <div class="day-container">
-                                <i class="fa-solid fa-clock"></i>
-                                Sunday
+                                <i class="fa-solid fa-clock"></i> Sunday
                             </div>
                             <span class="time">09:00 - 18:00</span>
                         </li>
@@ -554,10 +564,9 @@
                     <h2>Optilux</h2>
                 </div>
                 <p>
-                    At Optilux, we're dedicated to providing high-quality,
-                    personalized eye care for patients of all ages. Our skilled
-                    team uses the latest technology to ensure accurate exams,
-                    effective treatments, and clear, healthy vision for life.
+                    At Optilux, we're dedicated to providing high-quality, personalized eye care for patients of all
+                    ages. Our skilled team uses the latest technology to ensure accurate exams, effective treatments,
+                    and clear, healthy vision for life.
                 </p>
                 <div class="socials">
                     <a href=""><i class="fab fa-facebook-f"></i></a>
@@ -619,5 +628,7 @@
     <!-- ? this is the script link  -->
     <script src="js/javascript.js"></script>
 </body>
+
+</html>
 
 </html>

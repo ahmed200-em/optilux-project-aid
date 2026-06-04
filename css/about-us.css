@@ -100,7 +100,7 @@ img {
   z-index: 200;
   visibility: hidden;
   transform: translateY(10px);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   padding: 15px 10px;
   display: block;
   display: flex;
