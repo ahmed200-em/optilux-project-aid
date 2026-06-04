@@ -327,9 +327,12 @@ input#categories1 {
 
 .shop-container .product .product-info .stars img {
   height: 18px;
+<<<<<<< HEAD
 }
 .fa-star{
   color: orange;
+=======
+>>>>>>> f40d88737b6dab685890c1b71e9a515ab6df53ee
 }
 .shop-container .product .product-info .product-name {
   color: #2a485e;
