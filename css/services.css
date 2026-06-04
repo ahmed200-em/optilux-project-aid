@@ -267,20 +267,22 @@ html {
 .intro-text-area p {
   color: var(--text-gray);
   line-height: 1.8;
-  font-size: 1.05rem;
+  font-size: 1.3rem;
 }
 .intro-image-area {
   flex: 1;
   position: relative;
-  background-color: #f0f0f0;
+  width: 200px;
+  /* background-color: #f0f0f0; */
   border-radius: 20px;
-  min-height: 320px;
+  min-height: 500px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   background-image: url("../images/services-picture.webp");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .teal-overlay-box {
   position: absolute;
@@ -518,11 +520,17 @@ html {
   .intro-block {
     flex-direction: column;
   }
+  .intro-image-area{
+    width: 100%;
+  }
   .teal-overlay-box {
     position: relative;
     bottom: auto;
     width: 100%;
     margin-top: -20px;
+    top: -100px;
+    padding: 30px 20px;
+    margin: 0 40px;
   }
   .footer-top {
     grid-template-columns: repeat(2, 1fr);

@@ -440,7 +440,10 @@ input#categories1 {
 .fa-star {
   color: orange;
 }
-
+.pagination-section{
+  background-color: white;
+  padding: 40px 0;
+}
 .pagination button {
   background: transparent;
   border: none;
@@ -493,9 +496,6 @@ input#categories1 {
   .nav-links {
     top: -1%;
   }
-  .pagination {
-    margin-right: 20rem;
-  }
   .shop-container .products {
     grid-template-columns: repeat(2, 250px);
     justify-content: center;
@@ -505,9 +505,6 @@ input#categories1 {
 @media (max-width: 426px) {
   .shop .filters {
     flex-direction: column;
-  }
-  .pagination {
-    margin-left: 20rem;
   }
   .shop-container .products {
     grid-template-columns: 250px;
